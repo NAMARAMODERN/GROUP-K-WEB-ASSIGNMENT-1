@@ -9,6 +9,10 @@ body{
      padding: 20px;
      margin: 0px;
      border: 4px solid;
+    display: flex;
+    gap: 20px;
 }
+
+
 
 
