@@ -1,8 +1,8 @@
 body{
-    background-image: url(homepage.jpg);
+    background-image: url(IMG-20251116-WA0012.jpg);
     padding: 20px;
     border-radius: 20px;
-    background-color: gray;
+    background-color: brown;
     font-family: 'Times New Roman', Times, serif;
 }
 .card{
@@ -10,4 +10,5 @@ body{
      margin: 0px;
      border: 4px solid;
 }
+
 
