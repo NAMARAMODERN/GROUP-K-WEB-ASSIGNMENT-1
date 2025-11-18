@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="boot.css" >
+    </head>
+
+<body>
+  <!---home page-->
+
+  <nav id="navbar-example2" class="navbar text-danger px-3 mb-3 bg-warning  fixed-top ">
+    <a class="nav-link" href="index.html">Home Page</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link " href="services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portifolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Nalubega.html">Feedback Form</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-danger" href="malaika.html">Blog</a>
+
+      </li>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="portifolio.html" role="button"
+          aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item text-danger" href="index.html">NAMARA MODERN</a></li>
+          <li><a class="dropdown-item text-success" href="services.html">KIGONGO LUWEREKA</a></li>
+          <li><a class="dropdown-item text-success" href="portifolio.html"> MODING SAMUEL LOTELLA</a></li>
+          <li><a class="dropdown-item text-success" href="Nalubega.html">NALUBEGA ANGEL</a></li>
+          <li><a class="dropdown-item text-success" href="malaika.html">KALYANGO STEWART JUNIOR</a></li>
+          <li><a class="dropdown-item text-success" href="JOEL.html">JOREM OTIM</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item bg-warning fw-bold" href="About us.html">Resource Manager</a></li>
+        </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+  </div>
+  <style>
+    :root {
+      --pink:pink;
+      --orange: orange;
+      --green: green;
+      --radius: 12px;
+      --max-width: 1200px;
+      --gap: 1.5rem;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui, sans-serif;}
+    body{padding:2rem 1rem;color:black;}
+    h2{text-align:center;margin-bottom:2rem;color:lightgreen;font-size:1.8rem;}
+    .posts{display:flex;flex-wrap:wrap;gap:var(--gap);justify-content:center;max-width:var(--max-width);margin:auto;}
+    .card{flex:1 1 280px;background:white;border-radius:var(--radius);box-shadow:var(--shadow);display:flex;flex-direction:column;overflow:hidden;min-width:260px;}
+    .card img{width:100%;height:180px;object-fit:cover;}
+    .badge{background:black;color:white;display:inline-block;padding:.25rem .6rem;font-size:.7rem;border-radius:4px;margin:1rem 1rem 0;}
+    .content{padding:1rem 1rem 0;flex:1;}
+    .content h3{margin-bottom:.5rem;font-size:1.1rem;}
+    .content p{font-size:.9rem;line-height:1.4;color:grey;}
+    .footer{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;font-size:.8rem;font-weight:600;}
+    .footer.pink{background:var(--pink);}
+    .footer.orange{background:var(--orange);}
+    .footer.green{background:var(--green);}
+    @media(min-width:600px){.card{flex:1 1 30%;}}
+  </style>
+</head>
+<body background="water.jpg">
+
+  <h2>WORKOUTS AND NECESSARY DURATIONS</h2>
+
+  <section class="posts">
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="img 3. jpg.jpg" alt="Post 1">
+      <span class="badge">Home workouts</span>
+      <div class="content">
+        <h3>Body Push-ups</h3>
+        <p>Push-ups are a fundamental and highly effective body weight exercise, they primarily target your chest(pectorals), sholuders and triceps</p>
+        <p>.Different variations for beginners to advanced, do these for a period of 20-30 days to get complete results.</p>
+      </div>
+      <footer class="footer pink">
+        <span>20-30 days of consistence</span>
+        <span>Keep Pushing</span>
+      </footer>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="img 2. jpg.jpg" alt="Post 2">
+      <span class="badge">Home workouts</span>
+      <div class="content">
+        <h3>Back-Up workouts</h3>
+        <p>This combination of groin stretches, Bridges and hundreds focus on flexibility(for the inner thigh/adductor muscles), and on strenght and activation(for the glutes and core)</p>
+        <p>The goal is gentle, non-painful stretch in your inner thigh. Hold the comfortable position during the groin stretch for 20-30seconds and do the same for bridges and hundreds</p>
+        <P>Do sets of 30 each, the end results are then gauranteed after a period of 20-30 days</P>
+
+      </div>
+      <footer class="footer orange">
+        <span>20-30days of consistence</span>
+        <span>Keep Pushing</span>
+      </footer>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="img 1. jpg.jpg" alt="Post 3">
+      <span class="badge">Home workouts</span>
+      <div class="content">
+        <h3>Seat ups or Crunches</h3>
+        <p>Crunches are a classic and effective exercise for targeting your Rectus Abdominis (the "six pack" muscle), these workouts are small controlled movements that curl your ribs towards your pelvis.isolating the upper portion of your abs</p>
+        <p>These are effective, and have to be done for a period of 20-30 days</p>
+      </div>
+      <footer class="footer green">
+        <span>20-30days of consistence</span>
+        <span>Keep pushing</span>
+      </footer>
+    </article>
+  </section>
+ <a class="btn btn-success btn-lg" href="index.html">Go To Homepage</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

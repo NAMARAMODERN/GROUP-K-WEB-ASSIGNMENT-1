@@ -1,0 +1,13 @@
+body{
+   background-color: burlywood;
+    border-radius: 20px;
+    padding: 4%;
+    border: 8px solid;
+}
+.btn{
+    font-size: 40px;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}

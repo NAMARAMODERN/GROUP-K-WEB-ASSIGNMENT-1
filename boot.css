@@ -1,0 +1,225 @@
+/* Base Styles (for large screens/desktop) */
+body{
+    background-image: url(IMG-20251116-WA0012.jpg);
+    border-radius: 0px;
+    padding: 4%;
+    border: 10px solid;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card-group{
+    justify-content: space-between;
+    padding: 0px;
+    display: flex;
+    flex-direction: row; /* Default: Horizontal layout */
+    margin: 8px;
+    border: 4px solid;
+    gap: 100px; /* Large gap for desktop */
+    text-align: center;
+}
+.col-md-4{
+    width: 100px; /* Fixed width (needs to change for mobile) */
+    height:200px;
+}
+.card{
+    border: 4px solid;
+    display: flex;
+    padding: 0px;
+    gap: 100px;
+    margin: 0px;
+    text-align: center;
+}
+.card-link{
+    width: 100px; /* Fixed width (needs to change for mobile) */
+    height:500px;
+    justify-content: space-between;
+}
+.ghyt{
+    text-align: center;
+    font-size: 50px; /* Large font size */
+    font-style: italic;
+}
+.title{
+    text-align: center;
+    font-weight: 80px; /* Note: Font-weight should be a number (e.g., 800) or keyword */
+    font-style: oblique;
+}
+.container{
+    margin: 0px;
+    width: 50%; /* 50% width on desktop */
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    color: palevioletred;
+}
+.container3 {
+    background-color: greenyellow;
+}
+.container0{
+    background-color: deeppink;
+}
+.build{
+    border: 5px; 
+    border-radius: 10px solid black ;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------------- */
+/* 📱 Responsiveness: Media Queries for Tablets and Mobile (up to 768px) */
+/* ------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    /* 1. Change Layout to Stack Vertically */
+    .card-group {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Reduce large gap */
+        border: none; /* Optional: Remove border to clean up mobile layout */
+        margin: 0;
+    }
+
+    /* 2. Make Cards and Columns take full width */
+    .col-md-4,
+    .card-link,
+    .container {
+        width: 100%; /* Take up the full width of the parent */
+        height: auto; /* Allow height to adjust based on content */
+        margin-bottom: 20px; /* Add spacing between stacked items */
+    }
+
+    /* 3. Adjust body padding and borders */
+    body {
+        padding: 2%; /* Reduce padding */
+        border: 5px solid; /* Reduce border thickness */
+    }
+
+    /* 4. Reduce Large Font Sizes */
+    .ghyt {
+        font-size: 30px; /* Reduce large header size */
+    }
+}
+
+/* ------------------------------------------------------------------- */
+/* 🤳 Media Query for Small Phones (up to 480px) */
+/* ------------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+    /* Further simplify font size for better readability on small screens */
+    .ghyt {
+        font-size: 24px;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+}
+/* ------------------------------------------ */
+/* Base Styles (Desktop/Large Screens) */
+/* ------------------------------------------ */
+
+/* Ensure the main navbar container manages its children (the brand and the pills list) */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space out the 'Home Page' link and the pills list */
+    align-items: center;
+    min-height: 50px; /* Ensure minimum height */
+    padding: 1rem;
+    /* fixed-top is handled by the existing Bootstrap class */
+}
+
+/* Ensure the list of pills uses flexbox to keep items in a row */
+.nav-pills {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping by default */
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* General spacing for nav items on desktop */
+.nav-item {
+    margin: 0 0.5rem;
+}
+
+/* ------------------------------------------ */
+/* 📱 Medium Screens (Tablet view: up to 992px) */
+/* ------------------------------------------ */
+
+@media (max-width: 992px) {
+    /* Allow pills to wrap onto multiple lines if space is tight */
+    .nav-pills {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    
+    /* Add vertical margin between items when they wrap */
+    .nav-item, 
+    .nav-pills > .btn {
+        margin: 0.5rem 0.5rem;
+    }
+}
+
+/* ------------------------------------------ */
+/* 📲 Small Screens (Mobile view: up to 768px) */
+/* ------------------------------------------ */
+
+@media (max-width: 768px) {
+    /* 1. Stack the entire navbar content vertically */
+    .navbar {
+        flex-direction: column; /* Stack the brand/home link and the pills list */
+        align-items: flex-start; /* Align contents to the left */
+        position: static !important; /* Important: Disable fixed-top on mobile to prevent content overlap */
+        padding-top: 1rem;
+    }
+
+    /* 2. Make the main 'Home Page' link full width and add bottom spacing */
+    .navbar > .nav-link:first-child {
+        width: 100%;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 1rem;
+    }
+
+    /* 3. Stack navigation pills vertically, taking full width */
+    .nav-pills {
+        flex-direction: column; 
+        width: 100%;
+        gap: 0; 
+    }
+
+    /* 4. Make each nav item full width with clear separation */
+    .nav-item {
+        width: 100%; 
+        margin: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+
+    /* 5. Ensure all interactive elements fill the container */
+    .nav-link, 
+    .nav-pills > .btn {
+        width: 100%;
+        text-align: left;
+        padding: 0.75rem 1rem;
+        box-sizing: border-box;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    
+    /* 6. Ensure the dropdown menu expands inline */
+    .dropdown-menu {
+        position: static !important; /* Forces the dropdown content to flow right inside the stacked list */
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    .dropdown-menu li > a {
+        padding-left: 2rem; /* Indent dropdown items for clarity */
+    }
+}

@@ -1,0 +1,67 @@
+body{
+  background-image: url(./homepage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.build {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 60px; /* Base padding for desktop/large screens */
+  border-radius: 10px;
+}
+
+footer{
+  color: #bbb;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------- */
+/* 💻 Responsiveness: Media Queries for Smaller Screens */
+/* ------------------------------------------------------------------- */
+
+/* Styles for devices up to 768px wide (e.g., tablets and large phones) */
+@media (max-width: 768px) {
+  /* Reduce overlay padding for better fit on tablets/smaller devices */
+  .overlay {
+    padding: 40px;
+    margin: 0 20px; /* Add margin on the sides to prevent hitting edges */
+  }
+
+  /* Adjust 'build' to center content horizontally if needed, though 'align-items: center' is already set vertically */
+  .build {
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Start content near the top, as vertical space is limited */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 50px 0; /* Add top/bottom padding for separation */
+  }
+}
+
+/* Styles for devices up to 480px wide (e.g., standard smartphones) */
+@media (max-width: 480px) {
+  /* Further reduce overlay padding for very small screens */
+  .overlay {
+    padding: 30px 20px; /* Smaller vertical padding, slightly more horizontal padding */
+    border-radius: 5px; /* Slightly smaller border-radius */
+    width: auto;
+  }
+
+  /* Increase font size slightly if it's too small (optional, depends on HTML) */
+  body {
+    font-size: 16px; 
+  }
+  
+  /* Ensure text is readable against the background, though color is already white */
+  .overlay p, .overlay h1, .overlay h2 {
+    /* Example: Further refine font size for readability */
+    font-size: 1.1em;
+  }
+}
