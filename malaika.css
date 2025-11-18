@@ -28,6 +28,7 @@
     gap: 30px;
     padding: 20px;
      background-color: transparent;   
+         height: 100vh;
     }
 
     .card {
@@ -36,8 +37,7 @@
     overflow: hidden;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
     transition: 0.3s ease;
-    display: flex;
-        justify-content: center;
+
     }
 
     .card:hover {
@@ -83,6 +83,7 @@
     .btn:hover {
     background: #0053c7;
     }
+
 
 
 
