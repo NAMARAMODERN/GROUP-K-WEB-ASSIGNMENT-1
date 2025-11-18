@@ -1,9 +1,13 @@
 body{
     background-image: url(IMG-20251116-WA0012.jpg);
-    padding: 20px;
     border-radius: 20px;
     background-color: brown;
     font-family: 'Times New Roman', Times, serif;
+    background-size: cover;
+    padding: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .card{
      padding: 20px;
@@ -11,6 +15,27 @@ body{
      border: 4px solid;
     display: flex;
     gap: 20px;
+}
+.card-container{
+display: flex;
+gap: 50px;
+height: 450px;
+}
+
+.card img{
+width: 100%;
+height: 180px;
+}
+
+.card{
+background: white;
+border-radius: 20px;
+width: 300px;
+}
+
+.card-information{
+padding: 10px;
+text-align: center;
 }
 
 
