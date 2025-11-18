@@ -6,13 +6,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
   background-attachment: fixed;
-    padding: 100px;
+    padding: 10px;
 display: flex;
 justify-content: center;
 align-items: center;
 }
 .card{
-     padding: 100px;
+     padding: 10px;
      margin: 0px;
      border: 4px solid;
     display: flex;
@@ -39,6 +39,7 @@ width: 300px;
 padding: 10px;
 text-align: center;
 }
+
 
 
 
