@@ -22,14 +22,10 @@
     }
 
     .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
     padding: 20px;
      background-color: transparent; 
-         display: flex;
-        justify-content: center;
-        
-        
+    display: flex;   
     }
 
     .card {
@@ -84,6 +80,7 @@
     .btn:hover {
     background: #0053c7;
     }
+
 
 
 
