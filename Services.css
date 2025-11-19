@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+      padding-top: 80px;
    }
 * {
         margin: 0;
@@ -62,6 +63,7 @@
         color: #555;
         line-height: 1.6;
     }
+
 
 
 
