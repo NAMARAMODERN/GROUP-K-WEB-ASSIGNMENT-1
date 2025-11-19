@@ -28,7 +28,7 @@
      background-color: transparent; 
          display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        
         
     }
 
@@ -84,6 +84,7 @@
     .btn:hover {
     background: #0053c7;
     }
+
 
 
 
