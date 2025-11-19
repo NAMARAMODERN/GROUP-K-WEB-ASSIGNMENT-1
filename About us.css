@@ -1,4 +1,12 @@
 .card-footer{
     text-align: center;
     color: deeppink;
+
 }
+.container{
+      max-width:620px;
+      margin:0 auto;
+      background:#fff;
+      padding:1.5rem;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(2,6,23,0.06);
