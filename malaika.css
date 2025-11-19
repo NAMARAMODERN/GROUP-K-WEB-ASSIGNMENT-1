@@ -91,6 +91,15 @@
        align-items: center;
      }
 
+    @media (max-width: 480px) {
+  /* Further reduce overlay padding for very small screens */
+  .overlay {
+    padding: 30px 20px; /* Smaller vertical padding, slightly more horizontal padding */
+    border-radius: 5px; /* Slightly smaller border-radius */
+    width: auto;
+  }
+
+
 
 
 
