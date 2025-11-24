@@ -48,7 +48,8 @@ if (goHome) {
 const searchButton = document.querySelector("button[type='submit']");
 if (searchButton) {
     searchButton.addEventListener("click", () => {
-        alert("Thanks for loading to fitness app, NAMARA MODERN`S PAGE , For more info i. details,to go favourite sites on this interesting page select Button's and nav links !");
+        alert("Thanks for loading to fitness app, NAMARA MODERN`S PAGE , For more info i. details,to go favourite sites on this interesting page select Button's and nav tabs!");
     });
 }
+
 
