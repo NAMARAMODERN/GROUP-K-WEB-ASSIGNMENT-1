@@ -132,14 +132,31 @@
     </di
  
   <script>
-      function showAlert(blogTitle) {
-          alert('You clicked "Read More" on: ' + blogTitle + '!');
+     <script>
+  function showAlert(blogTitle) {
+      alert('You clicked "Read More" on: ' + blogTitle + '!');
+  }
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+      const buttons = document.querySelectorAll(".btn");
+      buttons.forEach(button => {
+          button.addEventListener("click", function(event) {
+              const card = button.closest(".card");
+              const title = card.querySelector("h3").textContent;
+              alert('You clicked "Read More" on: ' + title + '!');
+          });
+      });
+  });
+</script>
+
       }
   </script>
 
   <footer>All rights reserved @ Fitness UG 2025||KALYANGO STEWART JUNIOR  2025-B291-13614|| CS </footer>
 </body>
 </html>
+
 
 
 
