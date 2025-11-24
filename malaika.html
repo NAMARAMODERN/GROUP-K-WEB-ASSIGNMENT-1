@@ -1,4 +1,4 @@
-x<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -7,89 +7,95 @@ x<!doctype html>
     <link rel="icon" type="image" href="IMG-20251116-WA0012.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<style>
-    body { 
-        padding-top: 70px;
-        overflow-x: hidden;
-        padding: 30px;
-        background-image: url(IMG-20251116-WA0012.jpg);    
-        background-repeat: no-repeat;
-        background-size: cover;
-         background-attachment: fixed;
-        overflow-x: hidden;
-    }
-
-    h1.title {
-        text-align: center;
-        color: white;
-        margin-top: 40px;
-        font-weight: 700;
-    }
-
-  
-    .card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 40px;
-        padding: 10px;
-        max-width: 1200px;
-        margin: auto;
-    }
-
-   
-    .card {
-        background: #111;
-        color: #fff;
-        border-radius: 12px;
-        overflow: hidden;
-        border: none;
-        box-shadow: 0 0 10px rgba(255,255,255,0.1);
-        transition: transform .3s;
-    }
-
-    .card:hover {
-        transform: translateY(-5px);
-    }
-
-    .card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-
-    .card-content {
-        padding: 15px;
-    }
-
-    .card-content h3 {
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-
-    .card-content p {
-        font-size: 0.95rem;
-        opacity: 0.9;
-    }
-
-    .btn {
-        background: #0d6efd;
-        color: #fff;
-        width: 100%;
-        border-radius: 8px;
-        margin-top: 10px;
-        font-weight: 600;
-    }
-
-   
-    @media(max-width: 576px) {
-        .card img {
-            height: 160px;
+    <style>
+        body { 
+            padding-top: 70px;
+            padding: 30px;
+            background-image: url(IMG-20251116-WA0012.jpg);    
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow-x: hidden;
         }
+
         h1.title {
-            font-size: 1.6rem;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            font-weight: 700;
         }
-    }
-</style>
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 10px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: #111;
+            color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+            transition: transform .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            background: #0d6efd;
+            color: #fff;
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        @media(max-width: 576px) {
+            .card img {
+                height: 160px;
+            }
+            h1.title {
+                font-size: 1.6rem;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -109,7 +115,6 @@ x<!doctype html>
           <li class="nav-item fw-bold"><a class="nav-link" href="portifolio.html">Portfolio</a></li>
           <li class="nav-item fw-bold"><a class="nav-link" href="Nalubega.html">Feedback form</a></li>
           <li class="nav-item fw-bold"><a class="nav-link" href="malaika.html">Blog</a></li>
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Dropdown</a>
             <ul class="dropdown-menu">
@@ -128,118 +133,90 @@ x<!doctype html>
     </div>
   </nav>
 
-
   <h1 class="title">Latest Health & Fitness Blogs</h1>
 
-
- 
   <div class="card-container">
 
-    
     <div class="card">
         <img src="IMG-20251116-WA0014.jpg" alt="Fitness Image">
         <div class="card-content">
             <h3>10 Healthy Habits for Everyday Fitness</h3>
             <p>Improve your daily lifestyle with these simple and effective healthy habits.</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn" onclick="showAlert('10 Healthy Habits for Everyday Fitness')">Read More</a>
         </div>
     </div>
 
-   
     <div class="card">
         <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" alt="Workout Image">
         <div class="card-content">
             <h3>Best Morning Workouts for Body Strength</h3>
             <p>Boost energy and strength with these powerful morning routines.</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn" onclick="showAlert('Best Morning Workouts for Body Strength')">Read More</a>
         </div>
     </div>
 
-   
     <div class="card">
         <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Nutrition Image">
         <div class="card-content">
             <h3>Nutrition Guide: Foods That Build Muscle</h3>
             <p>Discover what to eat to enhance muscle growth and boost progress.</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn" onclick="showAlert('Nutrition Guide: Foods That Build Muscle')">Read More</a>
         </div>
     </div>
 
-    
     <div class="card">
         <img src="leg bend over.jpg" alt="Yoga Image">
         <div class="card-content">
             <h3>Yoga for Stress Relief and Calm Mind</h3>
             <p>Relax your mind and body using these proven yoga techniques.</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn" onclick="showAlert('Yoga for Stress Relief and Calm Mind')">Read More</a>
         </div>
     </div>
 
-   
     <div class="card">
         <img src="IMG-20251116-WA0012.jpg" alt="Fitness Image">
         <div class="card-content">
             <h3>Arm Workout</h3>
             <p>A beginner-friendly routine boosting energy, circulation, and strength.</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn" onclick="showAlert('Arm Workout')">Read More</a>
         </div>
     </div>
 
-   
     <div class="card">
         <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" alt="Workout Image">
         <div class="card-content">
             <h3>Dead Lifts</h3>
             <p>A top compound movement that builds body strength and reduces injury risk.</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn" onclick="showAlert('Dead Lifts')">Read More</a>
         </div>
     </div>
 
-    
     <div class="card">
         <img src="press ball.jpg" alt="Stretching Image">
         <div class="card-content">
             <h3>Beginner Cool Down & Stretching</h3>
             <p>Lower heart rate, relax muscles, and improve flexibility safely.</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn" onclick="showAlert('Beginner Cool Down & Stretching')">Read More</a>
         </div>
     </div>
 
-   
-  
-  <div class="card" class="overlay mx-auto col-md-8">
-    <img src="IMG-20251116-WA0009.jpg">
-    <div class="card-content">
-      <h3>Hard workout</h3>
-      <p>Moving Forward with your full body workout! You`re shinning .Provides the core physical
-            activity that delivers most of the fitness benefits as it builds body strenght promotes Endurance</p>
-      
-        <div class="actions">
-           <a href="#" class="btn">Read More</a>
+    <div class="card">
+        <img src="IMG-20251116-WA0009.jpg" alt="Hard Workout">
+        <div class="card-content">
+            <h3>Hard Workout</h3>
+            <p>Moving Forward with your full body workout! You’re shining. Provides the core physical
+            activity that delivers most of the fitness benefits as it builds body strength and promotes endurance.</p>
+             <a href="#" class="btn" onclick="showAlert('Beginner Cool Down & Stretching')">Read More</a>
         </div>
-      </div>
     </div>
-  </div>
+    </div>
+ 
+  <script>
+      function showAlert(blogTitle) {
+          alert('You clicked Read More on: ' + blogTitle + '!');
+      }
+  </script>
 
-</div>
-  </div>
-</div>
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <footer>All rights reserved @ Fitness UG 2025</footer>
+  <footer>All rights reserved @ Fitness UG 2025</footer>
 </body>
-
-
 </html>
-
-
-
-
-
-
-
-
-
