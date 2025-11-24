@@ -12,31 +12,32 @@
 
 <body>
    
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark text-bg-dark fixed-top ">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="Kigongo.html">Fitness is all we need</a>
-
+      <a class="navbar-brand active fw-bold" href="Kigongo.html">Fitness is all we need</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item fw-bold"><a class="nav-link" href="index.html">HOME PAGE</a></li>
-          <li class="nav-item fw-bold"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item fw-bold"><a class="nav-link" href="portifolio.html">Portfolio</a></li>
-          <li class="nav-item fw-bold"><a class="nav-link" href="Nalubega.html">Feedback form</a></li>
-          <li class="nav-item fw-bold"><a class="nav-link" href="malaika.html">Blog</a></li>
+          <li class="nav-item active fw-bold"><a class="nav-link"  href="index.html">HOME PAGE</a></li>
+          <li class="nav-item active fw-bold"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item active fw-bold"><a class="nav-link" href="portifolio.html">Portfolio</a></li>
+          <li class="nav-item active fw-bold"><a class="nav-link" href="Nalubega.html">Feedback form</a></li>
+          <li class="nav-item active fw-bold"><a class="nav-link" href="malaika.html">Blog</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Dropdown</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="portifolio.html" role="button"
+              aria-expanded="false">Dropdown</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item text-danger" href="index.html">NAMARA MODERN</a></li>
               <li><a class="dropdown-item text-success" href="services.html">KIGONGO LUWEREKA</a></li>
-              <li><a class="dropdown-item text-success" href="portifolio.html">MODING SAMUEL LOTELLA</a></li>
+              <li><a class="dropdown-item text-success" href="portifolio.html"> MODING SAMUEL LOTELLA</a></li>
               <li><a class="dropdown-item text-success" href="Nalubega.html">NALUBEGA ANGEL</a></li>
               <li><a class="dropdown-item text-success" href="malaika.html">KALYANGO STEWART JUNIOR</a></li>
               <li><a class="dropdown-item text-success" href="JOEL.html">JOREM OTIM</a></li>
-              <li><hr class="dropdown-divider"></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
               <li><a class="dropdown-item bg-warning fw-bold" href="About us.html">Resource Manager</a></li>
             </ul>
           </li>
@@ -44,6 +45,9 @@
       </div>
     </div>
   </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
 
   <h1 class="title">Latest Health & Fitness Blogs</h1>
 
@@ -126,7 +130,7 @@
         <div class="card-content">
             <h3>Body Workouts for Body Strength</h3>
             <p>Workout and Boost energy and strength with these powerful morning routines.</p>
-            <a href="readmore.html" class="btn" onclick="showAlert('Best Morning Workouts for Body Strength')">Read More</a>
+            <a href="readmore.html" class="btn" onclick="showAlert('Body Workouts for Body Strength')">Read More</a>
         </div>
     </div>
   </diV>
@@ -134,12 +138,27 @@
 function showAlert(blogTitle) {
     alert('You clicked "Read More" on: ' + blogTitle);
 }
+    function goToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // Makes scrolling smooth
+    });
+}
+    document.addEventListener("DOMContentLoaded", function () {
+    let yearSpan = document.getElementById("currentYear");
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
+    
+    
 </script>
 
 
-  <footer style"text-align: center;">All rights reserved @ Fitness UG 2025|| KALYANGO STEWART JUNIOR  2025-B291-13614 || CS </footer>
+  <footer style"text-align: center;">All rights reserved @ Fitness UG <span id="currentYear"></span> || KALYANGO STEWART JUNIOR  2025-B291-13614 || CS </footer>
 </body>
 </html>
+
 
 
 
