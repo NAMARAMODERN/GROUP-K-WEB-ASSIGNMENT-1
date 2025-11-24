@@ -124,8 +124,31 @@
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"></script>
-    
+    <script>
+// 1. Welcome message when page loads
+alert("Welcome to our Fitness Gallery!");
+
+// 2. Show a message when the Search button is clicked
+document.querySelector(".btn-outline-success").onclick = function () {
+  alert("Search feature is not yet active.");
+};
+
+// 3. Simple hover effect on gallery images
+const images = document.querySelectorAll(".gallery-container img");
+
+images.forEach(img => {
+  img.addEventListener("mouseover", () => {
+    img.style.transform = "scale(1.05)";
+  });
+
+  img.addEventListener("mouseout", () => {
+    img.style.transform = "scale(1)";
+  });
+});
+</script>
+
 
     </body>
 
     </html>
+
