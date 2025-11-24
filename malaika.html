@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Health and Fitness Blog</title>
 <link rel="stylesheet" href="malaika.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
 <body>
+  
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="Kigongo.html">Fitness is all we need</a>
@@ -47,15 +48,15 @@
     </div>
   </nav>
 
-
-
+  
   <h1 class="title">Latest Health & Fitness Blogs</h1>
 
+ 
   <div class="card-container">
 
     <div class="card">
         <img src="IMG-20251116-WA0014.jpg" alt="Fitness Image">
-        <div class="card-content">
+        <div class="card-content p-3">
             <h3>10 Healthy Habits for Everyday Fitness</h3>
             <p>Improve your daily lifestyle with these simple and effective healthy habits.</p>
             <a href="readmore.html" class="btn" onclick="showAlert('10 Healthy Habits for Everyday Fitness')">Read More</a>
@@ -64,7 +65,7 @@
 
     <div class="card">
         <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" alt="Workout Image">
-        <div class="card-content">
+        <div class="card-content p-3">
             <h3>Best Morning Workouts for Body Strength</h3>
             <p>Boost energy and strength with these powerful morning routines.</p>
             <a href="readmore.html" class="btn" onclick="showAlert('Best Morning Workouts for Body Strength')">Read More</a>
@@ -73,7 +74,7 @@
 
     <div class="card">
         <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Nutrition Image">
-        <div class="card-content">
+        <div class="card-content p-3">
             <h3>Nutrition Guide: Foods That Build Muscle</h3>
             <p>Discover what to eat to enhance muscle growth and boost progress.</p>
             <a href="readmore.html" class="btn" onclick="showAlert('Nutrition Guide: Foods That Build Muscle')">Read More</a>
@@ -82,7 +83,7 @@
 
     <div class="card">
         <img src="leg bend over.jpg" alt="Yoga Image">
-        <div class="card-content">
+        <div class="card-content p-3">
             <h3>Yoga for Stress Relief and Calm Mind</h3>
             <p>Relax your mind and body using these proven yoga techniques.</p>
             <a href="readmore.html" class="btn" onclick="showAlert('Yoga for Stress Relief and Calm Mind')">Read More</a>
@@ -91,7 +92,7 @@
 
     <div class="card">
         <img src="IMG-20251116-WA0012.jpg" alt="Fitness Image">
-        <div class="card-content">
+        <div class="card-content p-3">
             <h3>Arm Workout</h3>
             <p>A beginner-friendly routine boosting energy, circulation, and strength.</p>
             <a href="readmore.html" class="btn" onclick="showAlert('Arm Workout')">Read More</a>
@@ -100,7 +101,7 @@
 
     <div class="card">
         <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" alt="Workout Image">
-        <div class="card-content">
+        <div class="card-content p-3">
             <h3>Dead Lifts</h3>
             <p>A top compound movement that builds body strength and reduces injury risk.</p>
             <a href="readmore.html" class="btn" onclick="showAlert('Dead Lifts')">Read More</a>
@@ -109,7 +110,7 @@
 
     <div class="card">
         <img src="press ball.jpg" alt="Stretching Image">
-        <div class="card-content">
+        <div class="card-content p-3">
             <h3>Beginner Cool Down & Stretching</h3>
             <p>Lower heart rate, relax muscles, and improve flexibility safely.</p>
             <a href="readmore.html" class="btn" onclick="showAlert('Beginner Cool Down & Stretching')">Read More</a>
@@ -118,65 +119,50 @@
 
     <div class="card">
         <img src="IMG-20251116-WA0009.jpg" alt="Hard Workout">
-        <div class="card-content">
+        <div class="card-content p-3">
             <h3>Hard Workout</h3>
-            <p>Moving Forward with your full body workout! You’re shining. Provides the core physical
-            activity that delivers most of the fitness benefits as it builds body strength and promotes endurance.</p>
-             <a href="readmore.html" class="btn" onclick="showAlert('Beginner Cool Down & Stretching')">Read More</a>
+            <p>A powerful full-body workout that builds strength and boosts endurance.</p>
+            <a href="readmore.html" class="btn" onclick="showAlert('Hard Workout')">Read More</a>
         </div>
     </div>
-         <div class="card">
+
+    <div class="card">
         <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" alt="Workout Image">
-        <div class="card-content">
+        <div class="card-content p-3">
             <h3>Body Workouts for Body Strength</h3>
-            <p>Workout and Boost energy and strength with these powerful morning routines.</p>
+            <p>Boost energy and body strength with these powerful routines.</p>
             <a href="readmore.html" class="btn" onclick="showAlert('Body Workouts for Body Strength')">Read More</a>
         </div>
     </div>
-  </diV>
+
+  </div> 
+
 <script>
 function showAlert(blogTitle) {
     alert('You clicked "Read More" on: ' + blogTitle);
 }
-    function goToTop() {
+
+function goToTop() {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth'  // Makes scrolling smooth
+        behavior: 'smooth'
     });
 }
-    document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", function () {
     let yearSpan = document.getElementById("currentYear");
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 });
-    
-    
 </script>
 
+<footer>
+    All rights reserved @ Fitness UG <span id="currentYear"></span> ||
+    KALYANGO STEWART JUNIOR || 2025-B291-13614 || CS
+</footer>
 
-  <footer style"text-align: center;">All rights reserved @ Fitness UG <span id="currentYear"></span> || KALYANGO STEWART JUNIOR  2025-B291-13614 || CS </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
