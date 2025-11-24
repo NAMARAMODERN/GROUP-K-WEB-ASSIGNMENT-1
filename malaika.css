@@ -68,6 +68,16 @@
             font-weight: 600;
         }
 
+            a.readmore {
+        color: blue;
+        text-decoration: underline; 
+      }
+
+      a.readmore:hover {
+        color: darkblue; 
+      }
+
+
         @media(max-width: 576px) {
             .card img {
                 height: 160px;
@@ -90,6 +100,7 @@
 
 
    
+
 
 
 
