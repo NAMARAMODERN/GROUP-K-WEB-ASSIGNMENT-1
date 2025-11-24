@@ -130,26 +130,17 @@
         </div>
     </div>
   </diV>
- 
-  
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".card .btn");
-    buttons.forEach(button => {
-        button.addEventListener("click", event => {
-            event.preventDefault();
-            const title = button.closest(".card").querySelector("h3").textContent;
-            alert(`📌 You clicked "Read More" on:\n"${title}"`);
-        });
-    });
-});</script>
+function showAlert(blogTitle) {
+    alert('You clicked "Read More" on: ' + blogTitle);
+}
+</script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
   <footer style"text-align: center;">All rights reserved @ Fitness UG 2025|| KALYANGO STEWART JUNIOR  2025-B291-13614 || CS </footer>
 </body>
 </html>
+
 
 
 
