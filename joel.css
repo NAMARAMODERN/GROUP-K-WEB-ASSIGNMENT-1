@@ -1,0 +1,311 @@
+/* ========================================= */
+/* VARIABLES & RESET (CRITICAL FIX) */
+/* ========================================= */
+:root {
+    --pink: pink;
+    --orange: orange;
+    --green: green;
+    --radius: 12px;
+    --max-width: 1200px;
+    --gap: 1.5rem;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Reset for consistent box model and font */
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui, sans-serif;}
+
+/* Base body padding from previous inline style */
+body{padding:2rem 1rem;color:black;} 
+h2{text-align:center;margin-bottom:2rem;color:lightgreen;font-size:1.8rem;}
+
+/* ========================================= */
+/* POSTS SECTION LAYOUT (CRITICAL FIX) */
+/* ========================================= */
+.posts{
+    display:flex;
+    flex-wrap:wrap;
+    gap:var(--gap);
+    justify-content:center;
+    max-width:var(--max-width);
+    margin:auto;
+}
+
+/* ========================================= */
+/* CARD CONTENT STYLES (CRITICAL FIX) */
+/* ========================================= */
+.badge{
+    background:black;
+    color:white;
+    display:inline-block;
+    padding:.25rem .6rem;
+    font-size:.7rem;
+    border-radius:4px;
+    margin:1rem 1rem 0;
+    position: absolute; /* Added for slider image overlay */
+    z-index: 10;
+    top: 1rem;
+    left: 1rem;
+}
+
+.content{padding:1rem 1rem 0;flex:1;}
+.content h3{margin-bottom:.5rem;font-size:1.1rem;}
+.content p{font-size:.9rem;line-height:1.4;color:grey;}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:.75rem 1rem;
+    font-size:.8rem;
+    font-weight:600;
+}
+.footer.pink{background:var(--pink);}
+.footer.orange{background:var(--orange);}
+.footer.green{background:var(--green);}
+
+/* Media query from previous inline style */
+@media(min-width:600px){.card{flex:1 1 30%;}}/* ========================================= */
+/* BASE & GLOBAL STYLES */
+/* ========================================= */
+body {
+    /* Consolidated background properties */
+    background-image: url(bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    border-radius: 0px; /* Redundant if no rounding is intended, but kept as in original */
+    border: 10px solid;
+    padding: 4%;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ========================================= */
+/* TYPOGRAPHY */
+/* ========================================= */
+.ghyt {
+    text-align: center;
+    font-size: 50px; 
+    font-style: italic;
+}
+
+.title {
+    text-align: center;
+    /* font-weight: 80px is invalid. It should be a unitless number (e.g., 800) or a keyword. */
+    /* Assuming you meant a heavy weight, changed to 800 */
+    font-weight: 800; 
+    font-style: oblique;
+}
+
+/* ========================================= */
+/* LAYOUT & CONTAINERS */
+/* ========================================= */
+.container {
+    margin: 0px;
+    width: 50%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+    /* Removed padding: 0px and margin: 8px from original and put them here */
+    padding: 0px; 
+    margin: 8px;
+    
+    border: 4px solid;
+    gap: 100px; 
+}
+
+/* Specific background colors - Kept as is */
+.container0 {
+    background-color: deeppink;
+}
+.container1 {
+    color: palevioletred;
+}
+.container3 {
+    background-color: greenyellow;
+}
+
+.build {
+    /* Corrected border syntax, assuming you wanted a solid black border */
+    border: 5px solid black; 
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+}
+
+/* ... (Existing styles above this section) ... */
+
+/* ========================================= */
+/* CARD STYLES */
+/* ========================================= */
+.card {
+    /* Keep all your existing card styles like flex, box-shadow, etc. */
+    flex: 1 1 280px; 
+    /* ... (other card styles) ... */
+    position: relative; 
+    overflow: hidden; /* This is essential to hide the off-screen images */
+}
+
+/* ========================================= */
+/* SLIDING TRACK STYLES */
+/* ========================================= */
+.slider-wrapper {
+    display: flex; /* CRITICAL: Lays all images out in a single row */
+    width: 100%; 
+    height: 180px; 
+    transition: transform 0.5s ease-in-out; /* Smooth slide animation */
+}
+
+/* ========================================= */
+/* IMAGE ITEM STYLES */
+/* ========================================= */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+    /* CRITICAL: Prevents images from shrinking inside the flex row */
+    flex-shrink: 0; 
+
+    /* Ensure no residual absolute positioning or opacity */
+    position: static; 
+    opacity: 1; 
+}
+
+/* ========================================= */
+/* NAVIGATION BAR */
+/* ========================================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px; 
+    padding: 1rem;
+}
+
+.nav-pills {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 0.5rem;
+}
+
+/* ========================================= */
+/* MEDIA QUERIES (RESPONSIVENESS) */
+/* ========================================= */
+
+/* --- Tablet/Small Desktop Breakpoint --- */
+@media (max-width: 992px) {
+    .nav-pills {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    
+    .nav-item, 
+    .nav-pills > .btn {
+        margin: 0.5rem 0.5rem;
+    }
+}
+
+/* --- Mobile Breakpoint (768px and below) --- */
+@media (max-width: 768px) {
+    /* Layout Overrides */
+    .card-group {
+        flex-direction: column;
+        gap: 20px; 
+        border: none; 
+        margin: 0;
+    }
+
+    .col-md-4,
+    .card-link,
+    .container {
+        width: 100%; 
+        height: auto;
+        margin-bottom: 20px; 
+    }
+
+    body {
+        padding: 2%; 
+        border: 5px solid; /* Reduced border for smaller screens */
+    }
+
+    /* Typography Overrides */
+    .ghyt {
+        font-size: 30px;
+    }
+
+    /* Navbar Overrides */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; 
+        position: static !important; /* Ensure navbar is not fixed/sticky */
+        padding-top: 1rem;
+    }
+
+    .navbar > .nav-link:first-child {
+        width: 100%;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 1rem;
+    }
+
+    .nav-pills {
+        flex-direction: column; 
+        width: 100%;
+        gap: 0; 
+    }
+
+    .nav-item {
+        width: 100%; 
+        margin: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+
+    .nav-link, 
+    .nav-pills > .btn {
+        width: 100%;
+        text-align: left;
+        padding: 0.75rem 1rem;
+        box-sizing: border-box;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    
+    .dropdown-menu {
+        position: static !important; 
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    .dropdown-menu li > a {
+        padding-left: 2rem; 
+    }
+}
+
+/* --- Small Mobile Breakpoint (480px and below) --- */
+@media (max-width: 480px) {
+    .ghyt {
+        font-size: 24px;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+}
